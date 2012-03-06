@@ -1,0 +1,12 @@
+project(baz)
+
+cmake_minimum_required(VERSION 2.8)
+
+set(PACKAGE_MAJOR_VERSION "0")
+set(PACKAGE_MINOR_VERSION "1")
+set(PACKAGE_BUILD_VERSION "0")
+set(PACKAGE_VERSION "${PACKAGE_MAJOR_VERSION}.${PACKAGE_MINOR_VERSION}.${PACKAGE_BUILD_VERSION}")
+
+find_package(BAR 0.1.0 REQUIRED)
+
+add_subdirectory("src")
