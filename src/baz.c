@@ -17,6 +17,8 @@ int main( int argc, char *argv[] ) {
 	(void) puts( "This is baz." );
 	(void) puts( "Next line is from bar library:" );
 	bar_hello();
+	(void) puts( "Next line is bar calling foo:" );
+	bar_call_foo();
 
 	return EXIT_SUCCESS;
 }
