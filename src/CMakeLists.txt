@@ -3,12 +3,14 @@ set(BAZ_SRC
 )
 
 include_directories(
+	${FOO_INCLUDE_DIRS}
 	${BAR_INCLUDE_DIRS}
 )
 
 add_executable(${PROJECT_NAME} ${BAZ_SRC})
 target_link_libraries(${PROJECT_NAME}
-	bar-shared
+	${FOO_LIBRARIES}
+	${BAR_LIBRARIES}
 )
 
 install(TARGETS ${PROJECT_NAME} DESTINATION bin)

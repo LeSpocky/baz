@@ -11,14 +11,17 @@
 #include <stdlib.h>
 
 #include "bar.h"
+#include "foo.h"
 
 int main( int argc, char *argv[] ) {
 
-	(void) puts( "This is baz." );
-	(void) puts( "Next line is from bar library:" );
+	(void) puts( "baz: This is baz." );
+	(void) puts( "baz: Next line is from bar library:" );
 	bar_hello();
-	(void) puts( "Next line is bar calling foo:" );
+	(void) puts( "baz: Next line is bar calling foo:" );
 	bar_call_foo();
+	(void) puts( "baz: And now calling foo directly:" );
+	foo_hello();
 
 	return EXIT_SUCCESS;
 }
