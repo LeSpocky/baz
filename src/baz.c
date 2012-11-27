@@ -10,8 +10,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "bar.h"
-#include "foo.h"
+#include "bar/bar.h"
+#include "foo/foo.h"
 
 int main( int argc, char *argv[] ) {
 
