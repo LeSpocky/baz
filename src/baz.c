@@ -10,8 +10,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/*	NOTE	include uses no special include path but the system wide
+ *			with subfolder in the first case (bar). The second case uses
+ *			the include dir variable of the cmake package script, while
+ *			actually also having the header file in a subfolder. This is
+ *			just to demonstrate both possibilities.	*/
 #include "bar/bar.h"
-#include "foo/foo.h"
+#include "foo.h"
 
 int main( int argc, char *argv[] ) {
 

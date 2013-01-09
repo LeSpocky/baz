@@ -4,7 +4,6 @@ set(BAZ_SRC
 
 include_directories(
 	${FOO_INCLUDE_DIRS}
-	${BAR_INCLUDE_DIRS}
 )
 
 add_executable(${PROJECT_NAME} ${BAZ_SRC})
